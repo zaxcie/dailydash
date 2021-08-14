@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+		<rss xmlns:wsj="http://dowjones.net/rss/" xmlns:dj="http://dowjones.net/rss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+<title>WSJ.com: US Business</title>
+<link>http://online.wsj.com</link>
+<atom:link type="application/rss+xml" rel="self" href="http://online.wsj.com"/>
+<description>US Business</description>
+<language>en-us</language>
+<pubDate>Fri, 13 Aug 2021 20:33:23 -0400</pubDate>
+<lastBuildDate>Fri, 13 Aug 2021 20:33:23 -0400</lastBuildDate>
+<copyright>Dow Jones &amp; Company, Inc.</copyright>
+<generator>http://online.wsj.com</generator>
+<docs>http://cyber.law.harvard.edu/rss/rss.html</docs>
+<image>
+<title>WSJ.com: US Business</title>
+<link>http://online.wsj.com</link>
+<url>http://online.wsj.com/img/wsj_sm_logo.gif</url>
+</image>
+<item>
+<title>Job Postings Requiring Vaccination Jump in Past Month</title>
+<link>https://www.wsj.com/articles/jobs-postings-requiring-covid-19-vaccination-jump-in-past-month-11628847180?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[Employers ranging from accounting and software firms to schools and restaurants are asking applicants to be inoculated against the virus.]]></description>
+<content:encoded/>
+<pubDate>Fri, 13 Aug 2021 11:04:00 -0400</pubDate>
+<guid isPermaLink="false">SB11884080925832154856604587644201855825244</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-384610/medium" type="image/jpeg" medium="image">
+<media:credit>patrick t. fallon/Agence France-Presse/Getty Images</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>U.S. News</wsj:articletype>
+</item>
+<item>
+<title>Boeing's Starliner Spacecraft to Return to Factory Over Stuck Valves</title>
+<link>https://www.wsj.com/articles/boeing-says-it-will-remove-starliner-spacecraft-from-rocket-11628873905?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[The decision to remove the Starliner from the rocket that was supposed to propel it into space is expected to delay its launch by several months.]]></description>
+<content:encoded/>
+<pubDate>Fri, 13 Aug 2021 19:52:00 -0400</pubDate>
+<guid isPermaLink="false">SB11884080925832154856604587645980902215326</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-385269/medium" type="image/jpeg" medium="image">
+<media:credit>Aubrey Gemignani/Zuma Press</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Business</wsj:articletype>
+</item>
+<item>
+<title>Sonos Scores Legal Win in Patent Battle With Google</title>
+<link>https://www.wsj.com/articles/sonos-scores-legal-win-in-patent-battle-with-google-11628887424?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[Findings by a U.S. trade judge in a dispute over some of Google’s phone and speaker products could lead to an import ban.]]></description>
+<content:encoded/>
+<pubDate>Fri, 13 Aug 2021 17:51:00 -0400</pubDate>
+<guid isPermaLink="false">SB11884080925832154856604587646282826099446</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-385504/medium" type="image/jpeg" medium="image">
+<media:credit>Bloomberg News</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Technology</wsj:articletype>
+</item>
+<item>
+<title>Delta Variant Drops Small-Business Confidence to Lowest Level Since March</title>
+<link>https://www.wsj.com/articles/delta-variant-drops-small-business-confidence-to-lowest-level-since-march-11628868656?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[Less than 40% of small firms say they expect economic conditions to improve, according to a survey. “It seems like it is just a bust,” one businessman said.]]></description>
+<content:encoded/>
+<pubDate>Fri, 13 Aug 2021 16:03:00 -0400</pubDate>
+<guid isPermaLink="false">SB11884080925832154856604587645750667304524</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-385105/medium" type="image/jpeg" medium="image">
+<media:credit>Spencer Platt/Getty Images</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Small Business</wsj:articletype>
+</item>
+<item>
+<title>Richard Branson Reduces Stake in Virgin Galactic</title>
+<link>https://www.wsj.com/articles/richard-branson-reduces-stake-in-virgin-galactic-11628890369?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[The billionaire sold $300 million worth of shares in his space tourism company to raise money for other parts of the Virgin business empire.]]></description>
+<content:encoded/>
+<pubDate>Fri, 13 Aug 2021 17:32:00 -0400</pubDate>
+<guid isPermaLink="false">SB11884080925832154856604587646330705732936</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-385554/medium" type="image/jpeg" medium="image">
+<media:credit>Richard Drew/Associated Press</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Business</wsj:articletype>
+</item>
+<item>
+<title>Child Tax Credit Payments Rise in Second Month</title>
+<link>https://www.wsj.com/articles/child-tax-credit-payments-rise-in-second-month-11628866816?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[The Treasury Department paid more than $15 billion in child tax credits to households with nearly 61 million children.]]></description>
+<content:encoded/>
+<pubDate>Fri, 13 Aug 2021 11:50:00 -0400</pubDate>
+<guid isPermaLink="false">SB11884080925832154856604587645802975346974</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-385125/medium" type="image/jpeg" medium="image">
+<media:credit>Associated Press</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Politics and Policy</wsj:articletype>
+</item>
+<item>
+<title>Federal Judge Leaves New Eviction Moratorium in Place</title>
+<link>https://www.wsj.com/articles/federal-judge-leaves-new-eviction-moratorium-in-place-11628870224?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[If there is to be a judicial order blocking the Biden administration’s latest eviction ban, it will have to come from a higher court, a judge said.]]></description>
+<content:encoded/>
+<pubDate>Fri, 13 Aug 2021 15:16:00 -0400</pubDate>
+<guid isPermaLink="false">SB11884080925832154856604587645900216778284</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-385179/medium" type="image/jpeg" medium="image">
+<media:credit>ed jones/Agence France-Presse/Getty Images</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Politics and Policy</wsj:articletype>
+</item>
+<item>
+<title>Where Is America Diversifying the Fastest? Small Midwestern Towns.</title>
+<link>https://www.wsj.com/articles/where-is-america-diversifying-the-fastest-small-midwestern-towns-11628860161?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[Columbus, Ind., hometown of Cummins and Mike Pence, embodies a new kind of immigrant melting pot far from the big city; “a snowball effect.”]]></description>
+<content:encoded/>
+<pubDate>Fri, 13 Aug 2021 09:09:00 -0400</pubDate>
+<guid isPermaLink="false">SB10596806121828464523104587631673484060132</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-384090/medium" type="image/jpeg" medium="image">
+<media:credit>Maxine Wallace for The Wall Street Journal</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>U.S. News</wsj:articletype>
+</item>
+<item>
+<title>Chime Financial Raises $750 Million in Latest Funding Round</title>
+<link>https://www.wsj.com/articles/chime-financial-raises-750-million-in-latest-funding-round-11628872069?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[The move values the financial-technology startup at about $25 billion and sets it up for an initial public offering as early as next year.]]></description>
+<content:encoded/>
+<pubDate>Fri, 13 Aug 2021 12:27:00 -0400</pubDate>
+<guid isPermaLink="false">SB10313920251002544468604587645900966638564</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-385253/medium" type="image/jpeg" medium="image">
+<media:credit>Kimberly White/Getty Images for TechCrunch</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Business</wsj:articletype>
+</item>
+<item>
+<title>How to Bridge the Communications Gap in a Hybrid Office</title>
+<link>https://www.wsj.com/articles/communication-hybrid-workplace-11628795958?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[Too often, remote and in-office employees aren’t even speaking the same language.]]></description>
+<content:encoded/>
+<pubDate>Fri, 13 Aug 2021 10:00:00 -0400</pubDate>
+<guid isPermaLink="false">SB10687546423136964243304587581361101586798</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-384738/medium" type="image/jpeg" medium="image">
+<media:credit>istockphoto/getty images</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Journal Reports: Leadership</wsj:articletype>
+</item>
+<item>
+<title>Brazil's JBS Proposes to Buy Rest of Pilgrim's Pride</title>
+<link>https://www.wsj.com/articles/brazils-jbs-proposes-to-buy-rest-of-pilgrims-pride-11628866397?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[JBS, which already owns about 80.2% of Pilgrim’s Pride, is proposing to buy the rest as demand for chicken breasts, wings and other products surges.]]></description>
+<content:encoded/>
+<pubDate>Fri, 13 Aug 2021 16:10:00 -0400</pubDate>
+<guid isPermaLink="false">SB11884080925832154856604587645742406370470</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-385107/medium" type="image/jpeg" medium="image">
+<media:credit>jeff kowalsky/Agence France-Presse/Getty Images</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Business</wsj:articletype>
+</item>
+<item>
+<title>Cintas CEO Turned a 'Grubby Little Laundry' Into a Giant</title>
+<link>https://www.wsj.com/articles/cintas-ceo-turned-a-grubby-little-laundry-into-a-giant-11628863200?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[Richard T. Farmer, who has died at age 86, built a national network to supply clean uniforms and other services.]]></description>
+<content:encoded/>
+<pubDate>Fri, 13 Aug 2021 15:32:00 -0400</pubDate>
+<guid isPermaLink="false">SB11884080925832154856604587644500912406994</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-383279/medium" type="image/jpeg" medium="image">
+<media:credit>Cintas/Business Wire</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Obituaries</wsj:articletype>
+</item>
+</channel>
+</rss>

@@ -2,3 +2,5 @@ dash
 feedparser
 pandas
 plotly
+pytest
+requests

@@ -10,10 +10,11 @@ class WSJArticle(Article):
         super().__init__(parser_entry.title, parser_entry.link, parser_entry.summary, "WSJ")
 
     @staticmethod
-    def create_articles():
-        parser = feedparser.parse(WSJ_RSS_URL)
+    def create_articles(url_rss_feed=WSJ_RSS_URL):
+        parser = feedparser.parse(url_rss_feed)
         articles = list()
 
         for entry in parser.entries:
             articles.append(WSJArticle(entry))
+
         return articles
