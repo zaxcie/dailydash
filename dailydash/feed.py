@@ -5,5 +5,5 @@ class Feed(ABC):
 
     @staticmethod
     @abstractmethod
-    def create_items(self):
+    def create_items():
         pass
