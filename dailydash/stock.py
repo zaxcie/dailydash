@@ -1,6 +1,6 @@
 from datetime import datetime
 
-import dash_html_components as html
+from dash import html
 import yfinance as yf
 
 
@@ -8,8 +8,9 @@ class Stock:
     def __init__(self, symbol: str):
         self.yf_ticker = yf.Ticker(symbol)
         self.yf_history_1day = self.yf_ticker.history("1d", "1m")
-        self.yf_history_7days = self.yf_ticker.history("7d", "60m")
+        self.yf_history_7days = self.yf_ticker.history("7d", "90m")
         self.yf_history_3months = self.yf_ticker.history("3mo", "1d")
+        self.yf_history_12months = self.yf_ticker.history("1y", "1wk")
 
         self.name = self.yf_ticker.info["shortName"]
         self.symbol = self.yf_ticker.ticker
@@ -43,18 +44,19 @@ class Stock:
         open_value = self._daily_open_value(_date)
         last_value = self._lastest_close_value(_date)
 
-        raw = round(last_value - open_value, 2)
-        percent = round((raw / open_value) * 100, 2)
-        if raw > 0.009:
+        mouvement = round(last_value - open_value, 2)
+        percent = round((mouvement / open_value) * 100, 2)
+        if mouvement > 0.009:
             direction = "Up"
-        elif raw < -0.009:
+        elif mouvement < -0.009:
             direction = "Down"
         else:
             direction = "Neutral"
 
-        daily_perf = {"raw": raw,
+        daily_perf = {"mouvement": mouvement,
                       "percent": percent,
-                      "direction": direction}
+                      "direction": direction,
+                      "price": round(last_value, 2)}
 
         return daily_perf
 
@@ -63,7 +65,9 @@ class Stock:
         # Company name, Symbol
         # Today % change, raw value
         daily_perf = self.daily_performance()
-        daily_change_txt = '{raw} ({percent}%)'.format(raw=daily_perf["raw"], percent=daily_perf["percent"])
+        daily_change_txt = '{price} | {mouvement} ({percent}%)'.format(price=daily_perf["price"],
+                                                                       mouvement=daily_perf["mouvement"],
+                                                                       percent=daily_perf["percent"])
 
         if daily_perf["direction"] == "Up":
             daily_color = "#00cc66"
@@ -72,8 +76,11 @@ class Stock:
         else:
             daily_color = "#ff6600"
 
-        dash_rep.append(html.H5(self.name + " - " + self.symbol, style={"margin-top": "0", "margin-bottom": "0"}))
+        dash_rep.append(html.A(self.name + " - " + self.symbol, style={"margin-top": "0", "margin-bottom": "0"},
+                               href="https://ca.finance.yahoo.com/quote/" + self.symbol))
+        dash_rep.append(html.Br())
         dash_rep.append(html.A(daily_change_txt, style={"color": daily_color}))
+        dash_rep.append(html.Br())
 
         return dash_rep
 

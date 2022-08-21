@@ -1,9 +1,8 @@
 from dailydash.stock import Stock
 from dailydash.feed import Feed
 
-# WATCHLIST = ["LSPD.TO", "AAPL"]
 WATCHLIST = ["LSPD.TO", "AAPL", "BMO.TO", "BNS.TO", "BTCX-B.TO", "ETHX-B.TO", "GOOG", "HXT.TO",
-             "MCD", "MFC.TO", "MG", "MSFT", "VFV.TO", "VUG", "XQQ.TO", "ZCN.TO"]
+             "MCD", "MFC.TO", "MG", "MSFT", "VFV.TO", "VUG", "XQQ.TO", "ZCN.TO", "IFC.TO"]
 
 
 class StockFeed(Feed):

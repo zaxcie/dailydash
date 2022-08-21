@@ -40,21 +40,27 @@ app.layout = html.Div([html.Div([html.H2("Wall Street Journal"),
                                            "float": "left"}),
                        html.Div([
                                  html.H2("Financial Graph"),
-                                 html.Div(id='live-update-daily', style={"max-height": "260px"}),
+                                 html.Div(id='live-update-daily', style={"max-height": "250px"}),
                                  dcc.Interval(
                                      id='interval-component-dailyplot',
                                      interval=20000,
                                      n_intervals=0
                                  ),
-                                 html.Div(id='live-update-7days', style={"max-height": "260px"}),
+                                 html.Div(id='live-update-7days', style={"max-height": "250px"}),
                                  dcc.Interval(
                                      id='interval-component-7daysplot',
                                      interval=20000,
                                      n_intervals=0
                                  ),
-                                 html.Div(id='live-update-3months', style={"max-height": "260px"}),
+                                 html.Div(id='live-update-3months', style={"max-height": "250px"}),
                                  dcc.Interval(
                                      id='interval-component-3monthsplot',
+                                     interval=20000,
+                                     n_intervals=0
+                                 ),
+                                 html.Div(id='live-update-12months', style={"max-height": "250px"}),
+                                 dcc.Interval(
+                                     id='interval-component-12monthsplot',
                                      interval=20000,
                                      n_intervals=0
                                  )
@@ -122,6 +128,16 @@ def update_fingraph_3months(n):
     return dcc.Graph(
         id='3months',
         figure=stock_plot.plot_3months()
+    )
+
+
+@app.callback(Output('live-update-12months', 'children'),
+              Input('interval-component-12monthsplot', 'n_intervals'))
+def update_fingraph_3months(n):
+    stock_plot = StockPlot(stocks[n % len(stocks)])
+    return dcc.Graph(
+        id='12months',
+        figure=stock_plot.plot_1year()
     )
 
 
