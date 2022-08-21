@@ -1,5 +1,7 @@
 import feedparser
 
+from dash import html
+
 from dailydash.news.article import Article
 from dailydash.feed import Feed
 
@@ -17,7 +19,8 @@ class MWArticle(Article, Feed):
 
         for entry in parser.entries:
             entry.summary = MWArticle._clean_summary(entry.summary)
-            articles.append(MWArticle(entry))
+            articles.append(MWArticle(entry).get_dash_rep())
+            articles.append(html.Br())
 
         return articles
 

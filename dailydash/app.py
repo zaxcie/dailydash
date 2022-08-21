@@ -23,7 +23,7 @@ daily_perf_stocks = StocksPerformance(stocks)
 print("Loaded fin data")
 
 app.layout = html.Div([html.Div([html.H2("Wall Street Journal"),
-                                 html.Div(id='live-update-wsj', style={"max-height": "360px"}),
+                                 html.Div(id='live-update-wsj', style={"max-height": "450px"}),
                                  dcc.Interval(
                                      id='interval-component-wsj',
                                      interval=20000,
@@ -86,19 +86,13 @@ app.layout = html.Div([html.Div([html.H2("Wall Street Journal"),
 @app.callback(Output('live-update-wsj', 'children'),
               Input('interval-component-wsj', 'n_intervals'))
 def update_wsj(n):
-    return wsj[n % len(wsj)].get_dash_rep()
+    return wsj
 
 
 @app.callback(Output('live-update-mw', 'children'),
               Input('interval-component-mw', 'n_intervals'))
 def update_mw(n):
-    return mw[n % len(mw)].get_dash_rep()
-
-
-@app.callback(Output('live-update-feedly', 'children'),
-              Input('interval-component-feedly', 'n_intervals'))
-def update_feedly(n):
-    return mw[n % len(mw)].get_dash_rep()  # TODO change feedly to actually be feedly
+    return mw
 
 
 @app.callback(Output('live-update-daily', 'children'),

@@ -1,5 +1,7 @@
 import feedparser
 
+from dash import html
+
 from dailydash.news.article import Article
 from dailydash.feed import Feed
 
@@ -16,6 +18,7 @@ class WSJArticle(Article, Feed):
         articles = list()
 
         for entry in parser.entries:
-            articles.append(WSJArticle(entry))
+            articles.append(WSJArticle(entry).get_dash_rep())
+            articles.append(html.Br())
 
         return articles

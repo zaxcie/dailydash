@@ -10,9 +10,8 @@ class Article:
     summary: str
     source: str
 
-    def get_dash_rep(self) -> list:
-        dash_rep = list()
-        dash_rep.append(html.A(html.H4(self.tile), href=self.url))
-        dash_rep.append(html.P(self.summary))
+    def get_dash_rep(self):
+        dash_rep = html.A(self.tile, href=self.url)
+        # dash_rep.append(html.P(self.summary))
 
         return dash_rep
