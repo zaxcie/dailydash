@@ -1,4 +1,4 @@
-from dailydash.stock import Stock
+from dailydash.stock.stock import Stock
 from dailydash.feed import Feed
 
 WATCHLIST = ["LSPD.TO", "AAPL", "BMO.TO", "BNS.TO", "BTCX-B.TO", "ETHX-B.TO", "GOOG", "HXT.TO",

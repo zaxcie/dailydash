@@ -16,6 +16,7 @@ class WSJArticle(Article, Feed):
     def create_items(url_rss_feed=WSJ_RSS_URL):
         parser = feedparser.parse(url_rss_feed)
         articles = list()
+        articles.append(html.H3("Wall Street Journal"))
 
         for entry in parser.entries:
             articles.append(WSJArticle(entry).get_dash_rep())

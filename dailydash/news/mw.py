@@ -16,6 +16,7 @@ class MWArticle(Article, Feed):
     def create_items(url_rss_feed=MW_RSS_URL):
         parser = feedparser.parse(url_rss_feed)
         articles = list()
+        articles.append(html.H3("MarketWatch"))
 
         for entry in parser.entries:
             entry.summary = MWArticle._clean_summary(entry.summary)

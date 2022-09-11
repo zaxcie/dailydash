@@ -2,40 +2,29 @@ import dash
 from dash import html
 from dash import dcc
 from dash.dependencies import Input, Output
-import plotly.express as px
-import pandas as pd
 
 from dailydash.news.wsj import WSJArticle
 from dailydash.news.mw import MWArticle
-from dailydash.stock import Stock
-from dailydash.stock_plot import StockPlot
-from dailydash.stock_feed import StockFeed
-from dailydash.stocks_performance import StocksPerformance
+from dailydash.stock.stock_plot import StockPlot
+from dailydash.stock.stock_feed import StockFeed
+from dailydash.stock.stocks_performance import StocksPerformance
 
 app = dash.Dash(__name__)
 
-wsj = WSJArticle.create_items()
-mw = MWArticle.create_items()
+news = WSJArticle.create_items()
 print("Loaded articles")
 
 stocks = StockFeed.create_items()
 daily_perf_stocks = StocksPerformance(stocks)
 print("Loaded fin data")
 
-app.layout = html.Div([html.Div([html.H2("Wall Street Journal"),
+app.layout = html.Div([html.Div([html.H2("News"),
                                  html.Div(id='live-update-wsj', style={"max-height": "450px"}),
                                  dcc.Interval(
                                      id='interval-component-wsj',
-                                     interval=20000,
+                                     interval=120000,
                                      n_intervals=0
                                  ),
-                                 html.H2("MarketWatch"),
-                                 html.Div(id='live-update-mw', style={"max-height": "360px"}),
-                                 dcc.Interval(
-                                     id='interval-component-mw',
-                                     interval=20000,
-                                     n_intervals=0
-                                 )
                                  ], style={"max-width": "500px",
                                            "float": "left"}),
                        html.Div([
@@ -86,13 +75,19 @@ app.layout = html.Div([html.Div([html.H2("Wall Street Journal"),
 @app.callback(Output('live-update-wsj', 'children'),
               Input('interval-component-wsj', 'n_intervals'))
 def update_wsj(n):
-    return wsj
+    print(n)
+    if n % 5 == 0:
+        stocks = StockFeed.create_items()
+        daily_perf_stocks = StocksPerformance(stocks)
 
+        print("Loaded fin data")
 
-@app.callback(Output('live-update-mw', 'children'),
-              Input('interval-component-mw', 'n_intervals'))
-def update_mw(n):
-    return mw
+    if n % 2 == 0:
+        news = WSJArticle.create_items()
+        return news
+    else:
+        news = MWArticle.create_items()
+        return news
 
 
 @app.callback(Output('live-update-daily', 'children'),

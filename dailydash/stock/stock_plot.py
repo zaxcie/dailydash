@@ -1,7 +1,7 @@
 import plotly.graph_objects as go
 import plotly.io as pio
 
-from dailydash.stock import Stock
+from dailydash.stock.stock import Stock
 
 MY_TEMPLATE = pio.templates["plotly_dark"].layout
 MY_TEMPLATE.height = 280
